@@ -37,7 +37,7 @@ const AuthState = (props) => {
       userAuth();
     } catch (error) {
       const alert = {
-        msg: error.response.data.msg,
+        msg: error.response?.data.msg,
         category: 'alert-error',
       };
       dispatch({
@@ -81,7 +81,7 @@ const AuthState = (props) => {
       userAuth();
     } catch (error) {
       const alert = {
-        msg: error.response.data.msg,
+        msg: error.response?.data.msg,
         category: 'alert-error',
       };
       dispatch({
